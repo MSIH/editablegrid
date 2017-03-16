@@ -697,6 +697,9 @@ EditableGrid.prototype.processColumns = function()
 
 EditableGrid.prototype.parseColumnType = function(column)
 {
+	/*
+	this code is removing the default setting for the column.
+	I removed to allow the default settings to apply to all column.
 	// reset
 	column.unit = null;
 	column.precision = -1;
@@ -704,6 +707,7 @@ EditableGrid.prototype.parseColumnType = function(column)
 	column.thousands_separator = '.';
 	column.unit_before_number = false;
 	column.nansymbol = '';
+	*/
 
 	// extract precision, unit and number format from type if 6 given
 	if (column.datatype.match(/(.*)\((.*),(.*),(.*),(.*),(.*),(.*)\)$/)) {
